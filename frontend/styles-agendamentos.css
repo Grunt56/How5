@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: #f7d8f6;
+}
+
+.header {
+    color: #ec008c;
+    border-bottom: 1px solid #ccc;
+    padding: 25px 15px;
+    background-color: white;
+}
+
+.header a {
+    color: #ec008c;
+}
+
+nav {
+    display:flex;
+}
+
+.container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar-brand {
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin: 0;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    font-size: 20px;
+} 
+
+main {
+    margin-top: 25px;
+    
+}
+
+#form {
+    max-width: 1280px;
+    margin:auto auto auto 25px;
+}
+
+
+.form-control {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input {
+    padding: 10px 8px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.btn {
+    width: 200px;
+    padding: 8px 10px;
+    color: white;
+    background-color: #ec008c;
+    border-color: #ec008c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title {
+    max-width: 1280px;
+    margin: auto auto 25px 25px;
+
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.schedules {
+    margin-top: 80px;
+    max-width: 1280px;
+    margin-left: 25px;
+}
+
+.schedules ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.schedules li {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    max-width: 500px;
+}

@@ -38,7 +38,9 @@ router.post("/cadastro", async function(req, res){
         const createdSchedule = {
             horario: schedule.horario,
             situacao: schedule.situacao,
-            idCliente: schedule.idCliente
+            telefone: schedule.telefone,
+            nome: schedule.nome,
+            cpf: schedule.cpf,
         }
         const result = await db.collection("agendamentos").insertOne(createdSchedule)
         res.json(result)
