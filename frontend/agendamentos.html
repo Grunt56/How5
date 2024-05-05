@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estetica Harmonia - Agendamentos</title>
     <link rel="stylesheet" href="./styles-agendamentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -23,33 +26,36 @@
         </nav>
     </header>
     <main>
-        <h2 class="title">Agende a sua massagem aqui</h2>
-        <form id="form">
-            <div class="form-control">
-                <label for="nome">Nome:
-                </label>
-                <input class="text-input" type="text" name="nome" id="nome" required>
-            </div>
-            <div class="form-control">
-                <label for="telefone">Telefone:
-                </label>
-                <input class="text-input" type="tel" name="telefone" id="telefone" required>
-            </div>
-            <div class="form-control">
-                <label for="cpf">CPF:
-                </label>
-                <input class="text-input" type="text" name="cpf" id="cpf" required>
-            </div>
-            <div class="form-control">
-                <label for="horario">Horário:
-                </label>
-                <input class="text-input" type="datetime-local" name="horario" id="horario" required>
-            </div>
-            <button class="btn" type="submit">Agendar</button>
-        </form>
+        <div class="main-form">
+            <h2 class="title">Agende a sua massagem aqui</h2>
+            <form id="form">
+                <div class="form-control">
+                    <label for="nome">Nome:
+                    </label>
+                    <input class="text-input" type="text" name="nome" id="nome" required>
+                </div>
+                <div class="form-control">
+                    <label for="telefone">Telefone:
+                    </label>
+                    <input class="text-input" type="tel" name="telefone" id="telefone" required>
+                </div>
+                <div class="form-control">
+                    <label for="cpf">CPF:
+                    </label>
+                    <input class="text-input" type="text" name="cpf" id="cpf" required>
+                </div>
+                <div class="form-control">
+                    <label for="horario">Horário:
+                    </label>
+                    <input class="text-input" type="datetime-local" name="horario" id="horario" required>
+                </div>
+                <button class="btn" type="submit">Agendar</button>
+            </form>
+        </div>
         <div class="schedules">
             <h2 class="title ml-0">Horários Agendados</h2>
-            <ul id="schedule-list"></ul>
+            <button class="btn" id="btn-schedule">Mostrar Horários</button>
+            <ul id="schedule-list" style="display: none;"></ul>
         </div>
     </main>
     <script src="./agendamentos.js"></script>

@@ -14,6 +14,20 @@ document.addEventListener("DOMContentLoaded", function(){
     const form = document.getElementById("form")
     // Definição do elemento da lista de agendamento
     const scheduleList = document.getElementById("schedule-list")
+    // Definição do botão de mostragem dos agendamentos
+    const scheduleBtn = document.getElementById("btn-schedule")
+    scheduleBtn.addEventListener("click", function(){
+        const display = scheduleList.style.display
+
+        if(display === "flex"){
+            scheduleList.style.display = "none"
+            scheduleBtn.textContent = "Mostrar Horários"
+        } else {
+            scheduleList.style.display = "flex"
+            scheduleBtn.textContent = "Esconder Horários"
+        }
+    })
+    
 
     form.addEventListener("submit", function(event){
         // Salvando os valores das variáveis
